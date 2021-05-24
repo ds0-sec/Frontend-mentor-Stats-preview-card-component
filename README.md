@@ -73,6 +73,25 @@ How to create a simple overlay background over an image.
 }
 ```
 
+
+Update: Thanks to [@brasspetals](https://www.frontendmentor.io/profile/brasspetals) I discovered out a more elegant way to achieve the background color overlay on the background image:
+
+```html
+  <div id="card-image"></div>
+```
+```css
+  #card-image {
+      flex: 0 0 240px;
+      width: 100%;
+
+      border-radius: 10px 10px 0 0;
+
+      background-blend-mode: multiply;
+      background-color: var(--accent);
+      background-image: url(/images/image-header-mobile.jpg);
+      background-size: cover;
+  }
+```
 ## Author
 
 - Website - David Shanahan (https://vulnerable.computer)
